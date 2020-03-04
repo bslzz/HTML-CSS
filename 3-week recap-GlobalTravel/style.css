@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 /*--Logo--*/
 
 header {
@@ -27,6 +31,7 @@ nav {
   padding: 0px;
   margin: 0px;
   position: relative;
+  font-family: 'Pontano Sans', sans-serif;
 }
 
 nav ul {
@@ -145,7 +150,7 @@ span a:hover {
 }
 
 section .container {
-  font-size: 15px;
+  font-size: 17px;
 }
 
 section .container h2 {
@@ -166,6 +171,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.726);
   color: white;
   width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .con {
@@ -175,9 +181,10 @@ footer {
 }
 
 .final h5 {
-  font-size: 15px;
+  font-size: 16px;
   padding: 10px 395px 0 0;
   float: right;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .final p {
@@ -186,6 +193,7 @@ footer {
   float: right;
   margin: 5px;
   text-align: justify;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 form {
@@ -195,10 +203,11 @@ form {
   padding-bottom: 15px;
 }
 .form_contact label {
-  font-size: 15px;
+  font-size: 17px;
   margin-right: 10px;
   display: inline-block;
   width: 70px;
+  white-space: nowrap;
 }
 .form_contact input {
   width: 15%;
@@ -208,7 +217,7 @@ form {
 .foot h3 {
   padding: 25px 0 10px;
   margin: 10px 0 10px;
-  font-size: 15px;
+  font-size: 17px;
 }
 .demo {
   padding: 5px;
@@ -217,7 +226,7 @@ form {
   margin-right: 10px;
 }
 .foot h4 {
-  font-size: 15px;
+  font-size: 17px;
   padding: 25px 0 10px;
   margin: 10px 0 10px;
 }

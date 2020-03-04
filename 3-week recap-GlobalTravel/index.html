@@ -6,14 +6,15 @@
     <script src="https://kit.fontawesome.com/aed870ba56.js" crossorigin="anonymous"></script>
     <!--jQuery & bootstrap link-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
     <!--CSS link-->
     <link rel="stylesheet" href="style.css" />
     <!--fonts link-->
     <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
-    />  
+    />
+    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans&display=swap" rel="stylesheet">  
   </head>
 
   <!-------Menu------->
@@ -79,7 +80,6 @@
         <div class="foot">
           <p class="con">Contact Us</p> 
 
-
           <div class="middle">
             <div class="sm-container"><i class=" show-btn fas fa-user"></i>
           <div class="sm-menu">
@@ -139,39 +139,9 @@
           </form>
       </footer>
     </section>
-
-<!-------jQuery part-------->
-
-   <script>
-   $(document).ready(function(){
-     $("#logo").click(function(){
-      $("#flash").fadeTo(100, 0.20)
-       .fadeTo(100, 1.20)
-       .fadeTo(100, 0.20)
-       .fadeTo(100, 1.20)
-       .fadeTo(100, 0.20.click);
-       });
-       });
-
-$(".show-btn").click(function(){
-$(".sm-menu").fadeToggle(1000);
-});
-
-  var btn = $('#button');
-
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
-      btn.addClass('show');
-    } else {
-      btn.removeClass('show');
-    }
-  });
-
-  btn.on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({scrollTop:0}, '300');
-  });
-
-   </script>
+    
+     <!-------jQuery-------->
+     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+     <script type="text/javascript" src="scripts.js"></script>
   </body>
 </html>
