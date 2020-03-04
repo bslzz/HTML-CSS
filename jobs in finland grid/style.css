@@ -1,0 +1,529 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/*------header---------*/
+
+header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background: #fff;
+  z-index: 2;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.header-one {
+  background: #fff;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+  text-transform: uppercase;
+  padding: 1rem;
+  padding-left: 3rem;
+  font-size: 2rem;
+  color: rgb(17, 17, 170);
+  cursor: pointer;
+}
+.fin {
+  font-weight: bolder;
+  color: rgb(16, 16, 175);
+}
+.header-two {
+  background: #fff;
+  grid-column: 6 / span 1;
+  grid-row: 1 / span 2;
+  padding: 2rem;
+  font-size: 1rem;
+}
+
+.header-two a {
+  text-decoration: none;
+  color: rgb(37, 37, 158);
+}
+
+/* ------navbar---------  */
+
+nav {
+  background: rgb(3, 29, 175);
+  color: #fff;
+  position: relative;
+  text-transform: uppercase;
+  padding: 1rem;
+  cursor: pointer;
+  font-family: 'Kanit', sans-serif;
+}
+
+nav::before {
+  content: '';
+  height: 3px;
+  width: 8%;
+  background: #fff;
+  position: absolute;
+  left: 2.5rem;
+  bottom: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 2rem;
+}
+
+nav ul li ul {
+  display: none;
+  padding: 1rem;
+  margin: 3px;
+  text-transform: capitalize;
+  position: absolute;
+  left: 7rem;
+  top: 30px;
+  width: 15%;
+}
+
+nav ul li:hover ul {
+  display: block;
+  color: blue;
+  cursor: pointer;
+}
+
+nav ul li ul {
+  position: absolute;
+  text-align: start;
+  z-index: 1;
+}
+nav ul li ul li {
+  display: block;
+  padding: 1rem;
+  text-align: initial;
+  cursor: pointer;
+  background: #fff;
+}
+nav ul li ul li:hover {
+  background: rgba(30, 114, 241, 0.938);
+}
+
+.logo {
+  position: absolute;
+  right: 3rem;
+  cursor: pointer;
+}
+
+/*-----image 1-------*/
+.first-section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(0, 100, 240, 0.25),
+      rgba(0, 100, 240, 0.45)
+    ),
+    url('img.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.main-text {
+  position: absolute;
+  color: #fff;
+  top: 40%;
+  left: 50%;
+  width: 45%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.abc {
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main-text h2 {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.main-text p {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+/*-------explore by category-------*/
+.second-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+  margin: 1rem;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.text {
+  min-height: 100px;
+}
+
+.text-first {
+  grid-column: 1 / span 2;
+  text-transform: uppercase;
+  color: rgb(3, 7, 243);
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 900;
+  font-style: bold;
+}
+
+.text-second {
+  grid-column: 1 / span 2;
+  font-size: 1.7rem;
+  line-height: 2rem;
+}
+
+/*--------pictures grid---------*/
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 3rem;
+  margin: 1rem;
+  grid-gap: 1.5rem;
+}
+
+.box {
+  min-height: 200px;
+  cursor: pointer;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box:hover {
+  box-shadow: inset 0 0 500px #333;
+}
+
+.academic {
+  background-image: url('https://images.unsplash.com/photo-1560452913-f6d6c26668c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80');
+}
+.engineering {
+  background-image: url('https://images.unsplash.com/photo-1505461560638-05d8740c0a73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80');
+}
+
+.health {
+  background-image: url('https://images.unsplash.com/photo-1535914254981-b5012eebbd15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+}
+.hospitality {
+  background-image: url('https://images.unsplash.com/photo-1552590635-257736c7474a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=744&q=80');
+}
+
+.ict {
+  background-image: url('https://images.unsplash.com/photo-1490971588422-52f6262a237a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80');
+}
+.manufacturing {
+  background-image: url('https://images.unsplash.com/photo-1567789884554-0b844b597180?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+}
+.sales {
+  background-image: url('https://cdn.pixabay.com/photo/2016/02/19/11/40/people-1209860_1280.jpg');
+}
+.project {
+  background-image: url('https://cdn.pixabay.com/photo/2018/02/26/19/08/report-3183779_1280.jpg');
+}
+.service {
+  background-image: url('https://images.unsplash.com/photo-1556745753-b2904692b3cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1266&q=80');
+}
+/*------fourth section texts-------*/
+
+.fourth-section {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding: 3rem;
+  margin: 1rem;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.line {
+  height: 70px;
+}
+
+.region {
+  text-transform: uppercase;
+  color: rgb(3, 7, 243);
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 900;
+  font-style: bold;
+}
+
+.browse {
+  font-size: 1.7rem;
+}
+
+.btn {
+  font-size: 1.4rem;
+  background: rgb(3, 7, 243);
+  padding: 13px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+/*------last images grid------*/
+.second-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 3rem;
+  margin: 1rem;
+  grid-gap: 1.5rem;
+}
+
+.boxes {
+  min-height: 200px;
+  cursor: pointer;
+  position: relative;
+  transition: background 1s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.boxes:hover {
+  box-shadow: inset 0 0 500px #333;
+}
+
+.turku {
+  background-image: url('https://cdn.pixabay.com/photo/2018/10/24/20/08/church-3771148_1280.jpg');
+}
+
+.lapland {
+  background-image: url('https://cdn.pixabay.com/photo/2017/04/09/10/01/finland-2215334_1280.jpg');
+}
+
+.lakeland {
+  background-image: url('https://cdn.pixabay.com/photo/2018/08/28/14/04/lake-district-3637628_1280.jpg');
+}
+
+.south {
+  background-image: url('https://cdn.pixabay.com/photo/2014/02/26/14/14/finland-275284_1280.jpg');
+}
+.helsinki {
+  background-image: url('https://cdn.pixabay.com/photo/2016/12/07/23/25/panorama-of-helsinki-1890633_1280.jpg');
+}
+.espoo {
+  background-image: url('https://cdn.pixabay.com/photo/2013/05/09/19/03/oulu-110124_1280.jpg');
+}
+.tampere {
+  background-image: url('https://cdn.pixabay.com/photo/2015/03/28/23/01/river-696660_1280.jpg');
+}
+.oulu {
+  background-image: url('https://cdn.pixabay.com/photo/2013/02/06/21/52/oulu-78827_1280.jpg');
+}
+.talent {
+  background-image: url('https://cdn.pixabay.com/photo/2017/06/26/14/51/seascape-2444029_1280.jpg');
+}
+.kuopio {
+  background-image: url('https://cdn.pixabay.com/photo/2014/01/14/15/46/fountain-244669_1280.jpg');
+}
+.jysk {
+  background-image: url('https://cdn.pixabay.com/photo/2016/01/04/13/40/fireworks-1120923_1280.jpg');
+}
+
+.again {
+  position: absolute;
+  color: #fff;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  bottom: 1rem;
+  left: 1rem;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.again:hover {
+  text-decoration: underline;
+}
+
+/*-------footer-------*/
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  background: rgb(3, 29, 175);
+  margin-top: 5rem;
+  height: 500px;
+  position: relative;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.footertext-one {
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 2rem;
+  position: absolute;
+  top: 3rem;
+  left: 4rem;
+  font-size: 1.1rem;
+}
+
+.finland {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footertext-two {
+  grid-column: 2 / span 1;
+  color: #fff;
+  font-size: 1rem;
+  position: relative;
+}
+.footertexttwo-inner {
+  color: #fff;
+  position: absolute;
+  top: 3rem;
+  left: 4rem;
+}
+.footertexttwo-inner h2 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footertexttwo-inner h3 {
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  width: 80%;
+}
+
+.footertexttwo-inner h3:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footertexttwo-inner p {
+  font-size: 1rem;
+  line-height: 1.7rem;
+  width: 90%;
+}
+
+.footertext-three {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  color: #fff;
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+.footertextthree-inner {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.footertextthree-inner h2 {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.footertextthree-inner h2:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footertextthree-inner p {
+  font-size: 1rem;
+  line-height: 2rem;
+  width: 90%;
+}
+
+.footertext-four {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  color: #fff;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.footertextfour-inner {
+  position: absolute;
+  top: 5rem;
+  left: 4rem;
+}
+
+.footertextfour-inner h2 {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.footertextfour-inner h2:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footertextfour-inner p {
+  font-size: 1rem;
+  line-height: 2rem;
+  width: 90%;
+}
+.footertext-five {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+  color: #fff;
+  position: relative;
+}
+
+.footertextfive-inner {
+  position: absolute;
+  top: 6rem;
+}
+
+.footertextfive-inner h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1.3rem;
+}
+.footertextfive-inner h3:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footertextfive-inner p {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.footertextfive-inner p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/*------scroll top button-------*/
+
+.scroll {
+  position: fixed;
+  bottom: 40px;
+  right: 45px;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+  outline: none;
+  border-radius: 5px;
+  background: rgba(238, 236, 236, 0.781);
+}
+
+.scroll:hover {
+  transition: 0.1s;
+}

@@ -1,0 +1,69 @@
+ul {
+  color: brown;
+  list-style-type: none;
+  text-align: center;
+  font-size: 60px;
+  padding: 15px;
+  margin: 10px;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 20px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  background-color: rgb(138, 105, 255);
+}
+
+#logo {
+  font-size: 20px;
+  color: rgb(205, 60, 50);
+  font-family: "Bangers", cursive;
+  text-align: center;
+}
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1502786129293-79981df4e689?ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+p {
+  padding: 0px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.container {
+  font-family: "Times New Roman", Times, serif;
+  padding: 15px;
+  margin: 15px;
+}
+
+section {
+  background-image: url("https://images.unsplash.com/photo-1511184150666-9bb7d41a88f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
+  size: 200px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 25px;
+}
+
+footer p {
+  text-align: center;
+  color: black;
+}
+
+img {
+  float: left;
+  padding-right: 10px;
+  margin-right: 20px;
+}

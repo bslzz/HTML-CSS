@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webpage</title>
+    <!--fonts symbol link-->
+    <script src="https://kit.fontawesome.com/aed870ba56.js" crossorigin="anonymous"></script>
+    <!--jQuery & bootstrap link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--CSS link-->
+    <link rel="stylesheet" href="style.css" />
+    <!--fonts link-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />  
+  </head>
+
+  <!-------Menu------->
+  <body>
+       <header>
+      <div id="logo">
+        <img id="flash" src="image.png" alt="image">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a>
+         </li>
+          <li><a href="#aboutus">About Us</a>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div 
+        class="search-box">
+          <input class="search-txt" type="text" placeholder="Search..">
+      <a class="search-btn" href="#">
+          <i class="fas fa-search"></i></a>
+        </div>    
+     </nav>
+ </header>
+ <!-----content----->
+    <main>
+      <section id="home">
+        <div class="box">
+          <h1>Welcome to our homepage!</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Recusandae, tempora. Tempora, blanditiis. Quibusdam, officia
+            obcaecati! Sapiente incidunt molestias officiis voluptates rerum
+            iure saepe tempora, quos, quae dolores repellat, repudiandae
+            ducimus? <br><br><span><a href="https://fi.wikipedia.org/wiki/Lorem_ipsum" target="_blank">READ MORE</a></span>
+          </p>
+        </div>
+      </section>
+    </main>
+      <section id="aboutus">
+        <div class="container">
+          <h2>About Us</h2>
+          <p> <a href="https://www.lonelyplanet.com/nepal/patan/attractions/durbar-square-patan/a/poi-sig/1172399/357120" target="_blank"><img src="image.jpeg" alt="Nepal"></a> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            totam debitis consequatur, cumque ex mollitia alias vero aut
+            dignissimos! Expedita recusandae ea amet non est doloremque eum
+            numquam ad sit voluptatibus. Pariatur, incidunt sapiente.
+            Reprehenderit eaque incidunt architecto error voluptatum ipsum quasi
+            praesentium itaque neque non necessitatibus laboriosam temporibus,
+            ipsam minus earum sunt nemo ut blanditiis consequatur ullam, saepe
+            veritatis. Inventore, laudantium quasi eius eaque reiciendis
+            pariatur debitis repudiandae quam, ratione libero quis labore
+            suscipit repellendus doloribus optio. 
+            
+          </p>
+        </div>
+        <a id="button"></a>
+      </section>
+
+
+<!------footer------->
+      <section id="contact">
+      <footer>  
+        <div class="foot">
+          <p class="con">Contact Us</p> 
+
+
+          <div class="middle">
+            <div class="sm-container"><i class=" show-btn fas fa-user"></i>
+          <div class="sm-menu">
+          <a href="https://www.facebook.com/patandurbar/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/explore/locations/225786948/patan-durbar-square/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/hashtag/patandurbar" target="_blank"><i class="fab fa-twitter"></i></a>
+          </div>
+            </div>
+          </div>
+          
+          <div class="final">
+            <h5>Lorem ipsum dolor sit</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, neque itaque aut reprehenderit placeat ab necessitatibus impedit assumenda eos! Laboriosam, consequuntur ullam! Dicta nihil repellat perferendis ex possimus! Quo, dolore.</p>
+          </div>
+          <form>
+            <div class="form_contact">
+              <label for="fname">First Name</label>
+              <input type="text" name="Firstname" id="fname">
+            </div>
+            <div class="form_contact">
+              <label for="lname">Last Name</label>
+              <input type="text" name="Lastname" id="lname">
+            </div>
+            
+            <div class="form_contact">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email">
+            </div>
+
+<h3>Do you want to join with our newsletter?</h3>
+<div class="demo">
+<input type="radio" name="yes" >Yes
+</div>
+<div class="demo">
+  <input type="radio" name="yes">No
+</div>
+
+<h4>How did you find us?</h4>
+  <div class="last">
+    <div class="founder">
+      <input type="radio" name="test">Friend told me
+    </div>
+    <div class="founder">
+      <input type="radio" name="test">Found in the internet
+    </div>
+    <div class="founder">
+      <input type="radio" name="test">Saw in social media
+    </div>
+    <div class="founder">
+      <input type="radio" name="test">other
+    </div>
+    <textarea name="test" id="message" placeholder=""></textarea>
+     <button type="submit"><a href="#">Send</a></button>
+
+     <p id= "copy-right">Copyright © 2020. By Bishal Aryal. All rights reserved.</p>
+    </div>
+          </form>
+      </footer>
+    </section>
+
+<!-------jQuery part-------->
+
+   <script>
+   $(document).ready(function(){
+     $("#logo").click(function(){
+      $("#flash").fadeTo(100, 0.20)
+       .fadeTo(100, 1.20)
+       .fadeTo(100, 0.20)
+       .fadeTo(100, 1.20)
+       .fadeTo(100, 0.20.click);
+       });
+       });
+
+$(".show-btn").click(function(){
+$(".sm-menu").fadeToggle(1000);
+});
+
+  var btn = $('#button');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+
+   </script>
+  </body>
+</html>

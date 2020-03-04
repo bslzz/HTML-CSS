@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!----CSS link---->
+    <link rel="stylesheet" href="style.css" />
+    <!--font link-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!----fontawesome link---->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+        
+      <div id="logo">
+        <h1><a href="index.html">My portfolio</a></h1>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a> Menu</a>
+            <ul>
+              <li><a href="#second-part">Lorem</a></li>
+              <li><a href="#third-part">My Skills</a></li>
+              <li><a href="#footer">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      
+    </header>
+    <!------body------->
+    <main>
+      <section id="first-part">
+          <div class="container">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut labore,
+          tempore alias esse quia excepturi!
+        </p>
+        <a href="#">Read more</a>
+    </div>
+      </section>
+      <section id="second-part">
+        <div>
+          <img src="img.jpeg" alt="random" />
+        </div>
+        <div class="and">
+        <h2>Lorem ipsum dolor sit</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+          doloribus aspernatur dolorem! Saepe omnis culpa eligendi debitis enim
+          sed nihil soluta architecto error illo dolor quidem aliquid excepturi
+          nam porro ad minima, veritatis voluptate delectus ut, nostrum eos
+          pariatur voluptatibus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi
+          iusto molestiae. Quis quaerat hic sapiente perspiciatis labore
+          reprehenderit in tempore veniam quas earum ducimus error expedita eius
+          modi facere at sit, dignissimos, sint maxime! Eaque omnis magni libero
+          optio dolorem, ipsum nobis culpa. Tempore ipsa maxime enim laudantium
+          maiores incidunt dolorem magni, deleniti iusto quod reiciendis illum
+          sequi optio!
+        </p>
+        <nav>
+          <ul>
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+          </ul>
+        </nav>
+      </div>
+      </section>
+
+      <section id="third-part">
+        <h2>My skills</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum
+          molestiae est ut id optio tenetur a iure corporis eaque accusamus
+          sapiente, tempora obcaecati sed nesciunt. Ipsam pariatur laudantium
+          dignissimos. Beatae rerum temporibus officiis! Omnis ut ullam magni
+          fugiat minus!
+        </p>
+        <!-------fonts------->
+        <div class="fonts">
+            <div class="fonts1">
+        <i class="fab fa-html5 fa-3x"></i>
+        <label class="file" for="file">HTML</label>
+         <progress id="file" value="60" max="100"> 32% </progress>
+        </div>
+        <div class="fonts1">
+        <i class="fab fa-css3-alt fa-3x"></i>
+        <label class="file" for="file">CSS</label>
+         <progress id="file" value="32" max="100"> 32% </progress>
+        </div>
+        <div class="fonts2">
+        <i id="js" class="fab fa-js fa-3x"></i>
+        <label class="filejs" for="file">JS</label>
+         <progress id="file" value="15" max="100"> 32% </progress>
+        </div>
+        <div class="fonts1">
+        <i class="fab fa-figma fa-3x"></i>
+        <label class="file" for="file">UI design</label>
+         <progress id="file" value="20" max="100"> 32% </progress>
+        </div>
+        </div> 
+      </section>
+    </main>
+    <!-----footer------->
+    <footer id="footer">
+      <div class="last-part1">
+        <h3>Lorem ipsum dolor</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsam
+          eveniet dolorum veritatis odit, asperiores debitis nostrum. Voluptas,
+          delectus quibusdam!
+        </p>
+      </div>
+      <div class="last-part2">
+        <h4>Lorem ipsum dolor</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure expedita
+          maxime facere cum, dignissimos ipsa eos minima obcaecati nisi!
+          Delectus?
+        </p>
+        
+      </div>
+
+      <div class="last-part3">
+        <form class="contact">Contact me
+        <label for="name">Name</label>
+        <input type="text" name="form" placeholder="Enter your name" />
+        <label for="email">Email</label>
+        <input type="text" name="form" placeholder="Enter your email" />
+        <label for="phone">Phone number</label>
+        <input type="text" name="form" placeholder="Enter your phone number" />
+        <label for="text">Message</label>
+        <textarea
+          name="text"
+          id="form"
+          placeholder="Enter your message"
+        ></textarea>
+        
+        <button type="submit">Send</button>
+      </div>
+    </form>
+    <div>
+    <button class= "scroll" type="button" id="backtotop_js">Back to top</button>
+  </div>
+    </footer>
+   
+    <script>
+      document.getElementById('backtotop_js').onclick = function () {    
+    document.documentElement.scrollTop = 0;
+}
+    </script>
+  </body>
+</html>
