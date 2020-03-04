@@ -1,3 +1,12 @@
+body {
+  background-image: url(https://images.unsplash.com/photo-1502786129293-79981df4e689?ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
 ul {
   color: brown;
   list-style-type: none;
@@ -25,16 +34,8 @@ header ul li a:hover {
 #logo {
   font-size: 20px;
   color: rgb(205, 60, 50);
-  font-family: "Bangers", cursive;
+  font-family: 'Bangers', cursive;
   text-align: center;
-}
-
-body {
-  background-image: url(https://images.unsplash.com/photo-1502786129293-79981df4e689?ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 p {
@@ -44,13 +45,13 @@ p {
 }
 
 .container {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   padding: 15px;
   margin: 15px;
 }
 
 section {
-  background-image: url("https://images.unsplash.com/photo-1511184150666-9bb7d41a88f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
+  background-image: url('https://images.unsplash.com/photo-1511184150666-9bb7d41a88f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80');
   size: 200px;
   padding: 10px;
   margin: 10px;
