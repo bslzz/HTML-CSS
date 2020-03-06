@@ -22,8 +22,8 @@
         <ul>
           <li>Menu <i class="fas fa-caret-down"></i>
             <ul>
-              <li><a href="#second-part">Lorem</a></li>
-              <li><a href="#third-part">My Skills</a></li>
+              <li><a href="#second-section">Lorem</a></li>
+              <li><a href="#third-section">My Skills</a></li>
               <li><a href="#footer">Contact</a></li>
             </ul>
           </li>
@@ -69,7 +69,8 @@
       </div>
       </section>
 
-      <section id="third-part">
+      <section id="third-section">
+        <div class="thirdsection-texts">
         <h2>My skills</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum
@@ -78,6 +79,7 @@
           dignissimos. Beatae rerum temporibus officiis! Omnis ut ullam magni
           fugiat minus!
         </p>
+      </div>
         <!-------fonts------->
         <div class="fonts">
             <div class="fonts1">
@@ -86,8 +88,8 @@
          <progress id="file" value="60" max="100"> 32% </progress>
         </div>
         <div class="fonts1">
-        <i class="fab fa-css3-alt fa-3x"></i>
-        <label class="file" for="file">CSS</label>
+           <i class="fab fa-css3-alt fa-3x"></i>
+           <label class="file" for="file">CSS</label>
          <progress id="file" value="32" max="100"> 32% </progress>
         </div>
         <div class="fonts2">
@@ -105,7 +107,7 @@
     </main>
     <!-----footer------->
     <footer id="footer">
-      <div class="last-part1">
+      <div class="footer-text1">
         <h3>Lorem ipsum dolor</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsam
@@ -113,7 +115,7 @@
           delectus quibusdam!
         </p>
       </div>
-      <div class="last-part2">
+      <div class="footer-text2">
         <h4>Lorem ipsum dolor</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure expedita
@@ -123,7 +125,7 @@
         
       </div>
 
-      <div class="last-part3">
+      <div class="footer-text3">
         <form class="contact">Contact me
         <label for="name">Name</label>
         <input type="text" name="form" placeholder="Enter your name" />
@@ -145,11 +147,6 @@
     <button class= "scroll" type="button" id="backtotop_js">Back to top</button>
   </div>
     </footer>
-   
-    <script>
-      document.getElementById('backtotop_js').onclick = function () {    
-    document.documentElement.scrollTop = 0;
-}
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
