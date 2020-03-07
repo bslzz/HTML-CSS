@@ -1,5 +1,6 @@
 * {
   scroll-behavior: smooth;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*--Logo--*/
@@ -31,7 +32,7 @@ nav {
   padding: 0px;
   margin: 0px;
   position: relative;
-  font-family: 'Pontano Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 nav ul {
@@ -83,7 +84,6 @@ main section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  font-family: 'Source Sans Pro', sans-serif;
   margin: 0px;
   padding-bottom: 40px;
   height: 590px;
@@ -171,7 +171,6 @@ footer {
   background-color: rgba(0, 0, 0, 0.726);
   color: white;
   width: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .con {
@@ -184,7 +183,6 @@ footer {
   font-size: 16px;
   padding: 10px 395px 0 0;
   float: right;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .final p {
@@ -193,7 +191,6 @@ footer {
   float: right;
   margin: 5px;
   text-align: justify;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
 form {
