@@ -366,57 +366,54 @@ nav ul li ul li:hover {
 /*-------footer-------*/
 
 footer {
+  height: 600px;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    'one one two . five'
+    '. . three . .'
+    '. . four . .'
+    '. . . . .';
   background: rgb(3, 29, 175);
+  color: #fff;
+  padding: 4rem;
   margin-top: 5rem;
-  height: 500px;
-  position: relative;
-  font-family: 'Alegreya Sans', sans-serif;
 }
 
 .footertext-one {
+  grid-area: one;
   text-transform: uppercase;
-  color: #fff;
   line-height: 2rem;
-  position: absolute;
-  top: 3rem;
-  left: 4rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .finland {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
 }
-
 .footertext-two {
-  grid-column: 2 / span 1;
-  color: #fff;
+  grid-area: two;
   font-size: 1rem;
-  position: relative;
 }
-.footertexttwo-inner {
-  color: #fff;
-  position: absolute;
-  top: 3rem;
-  left: 4rem;
-}
+
 .footertexttwo-inner h2 {
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 .footertexttwo-inner h3 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.7rem;
-  width: 80%;
 }
 
-.footertexttwo-inner h3:hover {
+.footertexttwo-inner h3:hover,
+.footertextthree-inner h2:hover,
+.footertextfour-inner h2:hover,
+.footertextfive-inner h3:hover,
+.footertextfive-inner p:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -424,97 +421,54 @@ footer {
 .footertexttwo-inner p {
   font-size: 1rem;
   line-height: 1.7rem;
-  width: 90%;
 }
 
 .footertext-three {
-  grid-column: 2 / span 1;
-  grid-row: 2 / span 1;
-  color: #fff;
-  margin-top: 1.5rem;
-  position: relative;
+  grid-area: three;
 }
-
-.footertextthree-inner {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
-
 .footertextthree-inner h2 {
   font-weight: bold;
-  font-size: 1.1rem;
-}
-
-.footertextthree-inner h2:hover {
-  cursor: pointer;
-  text-decoration: underline;
+  font-size: 1rem;
 }
 
 .footertextthree-inner p {
   font-size: 1rem;
   line-height: 2rem;
-  width: 90%;
 }
 
 .footertext-four {
-  grid-column: 2 / span 1;
-  grid-row: 3 / span 1;
-  color: #fff;
-  margin-top: 1rem;
-  position: relative;
+  grid-area: four;
 }
-
-.footertextfour-inner {
-  position: absolute;
-  top: 5rem;
-  left: 4rem;
-}
-
 .footertextfour-inner h2 {
   font-weight: bold;
-  font-size: 1.1rem;
-}
-
-.footertextfour-inner h2:hover {
-  cursor: pointer;
-  text-decoration: underline;
+  font-size: 1rem;
 }
 
 .footertextfour-inner p {
   font-size: 1rem;
   line-height: 2rem;
-  width: 90%;
 }
-.footertext-five {
-  grid-column: 4 / span 1;
-  grid-row: 1 / span 1;
-  color: #fff;
-  position: relative;
+.footertext-two,
+.footertext-three,
+.footertext-four {
+  width: 35%;
+  margin-left: 5rem;
 }
 
-.footertextfive-inner {
-  position: absolute;
-  top: 6rem;
+.footertext-five {
+  grid-area: five;
+  display: grid;
+  align-items: center;
 }
 
 .footertextfive-inner h3 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 1.3rem;
-}
-.footertextfive-inner h3:hover {
-  cursor: pointer;
-  text-decoration: underline;
 }
 
 .footertextfive-inner p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
-}
-
-.footertextfive-inner p:hover {
-  cursor: pointer;
-  text-decoration: underline;
 }
 
 /*------scroll top button-------*/
@@ -538,19 +492,22 @@ footer {
 }
 
 @media (max-width: 910px) {
-  .container {
+  .container,
+  .second-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 680px) {
-  .container {
+  .container,
+  .second-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 520px) {
-  .box {
+  .box,
+  .boxes {
     height: 100%;
     width: 100%;
     font-size: 1.4em;
