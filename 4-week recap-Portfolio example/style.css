@@ -58,6 +58,8 @@ nav ul li ul li {
   margin-top: 15px;
   font-size: 1rem;
   font-weight: 700;
+  width: 80px;
+  white-space: nowrap;
 }
 nav ul li ul li:hover {
   background: rgba(30, 114, 241, 0.938);
@@ -107,26 +109,20 @@ nav ul li ul li:hover {
 /*---second part---*/
 #second-section {
   background: #fff;
-  display: flex;
-  position: relative;
-  width: 100%;
-  min-height: 400px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  padding: 0 17rem;
+  margin-top: 2rem;
+  height: 300px;
 }
-
-#second-section div img {
-  position: absolute;
-  width: 300px;
-  height: 250px;
-  left: 20%;
-  top: 5%;
+#second-section img {
+  height: 200px;
+  width: 330px;
 }
-
 .secondsection_text {
-  position: absolute;
-  max-width: 100%;
-  left: 45%;
-  top: 5%;
-  right: 20%;
+  height: 200px;
+  width: 410px;
 }
 .secondsection_text h2 {
   margin-bottom: 1rem;
@@ -136,18 +132,11 @@ nav ul li ul li:hover {
   font-size: 15px;
   line-height: 1.7rem;
 }
-
-.secondsection_nav {
+.list ul {
+  margin-left: 1rem;
+  margin-top: 1rem;
   font-size: 15px;
   line-height: 1.2rem;
-  position: absolute;
-  left: 5%;
-  margin-top: 1rem;
-  line-height: 1.5rem;
-}
-
-.secondsection_nav li {
-  margin-top: 1rem;
 }
 
 /*----third part----*/
@@ -212,7 +201,7 @@ footer {
   justify-content: center;
   grid-template-areas: 'one two three';
   width: 100%;
-  padding: 3rem;
+  padding: 2rem;
 }
 .footer-text1 {
   margin-left: 14rem;
@@ -298,7 +287,31 @@ button:hover {
 }
 
 /*------media queries--------*/
+@media (max-width: 1255px) {
+  #second-section {
+    height: 700px;
+  }
+  #second-section img {
+    height: 350px;
+    width: 100%;
+  }
+  .secondsection_text {
+    width: 100%;
+  }
+}
+
 @media (max-width: 1170px) {
+  #second-section {
+    height: 600px;
+    padding: 0 15rem;
+  }
+  #second-section img {
+    height: 250px;
+    width: 500px;
+  }
+  .secondsection_text {
+    width: 100%;
+  }
   #third-section {
     height: 500px;
   }
@@ -313,7 +326,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 900px;
+    height: 880px;
   }
   .footer-text1 {
     margin-left: 0;
@@ -330,12 +343,43 @@ button:hover {
 }
 
 @media (max-width: 850px) {
+  #second-section {
+    height: 700px;
+    padding: 0 10rem;
+  }
+  #second-section img {
+    height: 100%;
+    width: 100%;
+  }
+  .secondsection_text {
+    width: 100%;
+  }
   #third-section {
     height: 660px;
   }
-
   .fonts1 {
     margin-top: 10px;
     width: 86%;
+  }
+  nav ul li ul li {
+    white-space: nowrap;
+    width: 80px;
+  }
+}
+@media (max-width: 530px) {
+  #logo {
+    padding: 0 4rem;
+  }
+
+  #second-section {
+    height: 700px;
+    padding: 0 8rem;
+  }
+  #second-section img {
+    height: 100%;
+    width: 100%;
+  }
+  .secondsection_text {
+    width: 100%;
   }
 }
